@@ -1,1 +1,200 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sakura Café</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fff5f7;
+      color: #333;
+    }
 
+    header {
+      background: linear-gradient(rgba(255, 192, 203, 0.4), rgba(255, 255, 255, 0.8)), url("hero.jpg");
+      background-size: cover;
+      background-position: center;
+      min-height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 30px;
+    }
+
+    .hero {
+      background: rgba(255, 255, 255, 0.85);
+      padding: 35px;
+      border-radius: 25px;
+      max-width: 650px;
+    }
+
+    h1 {
+      font-size: 56px;
+      color: #d85c8a;
+      margin: 0;
+    }
+
+    .hero p {
+      font-size: 22px;
+      margin: 15px 0 25px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #d85c8a;
+      color: white;
+      padding: 14px 24px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 5px;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 36px;
+      color: #d85c8a;
+      margin-bottom: 35px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 22px;
+      overflow: hidden;
+      box-shadow: 0 8px 25px rgba(216, 92, 138, 0.2);
+      text-align: center;
+    }
+
+    .card img {
+      width: 100%;
+      height: 230px;
+      object-fit: cover;
+    }
+
+    .card div {
+      padding: 20px;
+    }
+
+    .card h3 {
+      color: #d85c8a;
+      font-size: 24px;
+    }
+
+    .about {
+      background: white;
+      border-radius: 25px;
+      padding: 35px;
+      box-shadow: 0 8px 25px rgba(216, 92, 138, 0.15);
+      font-size: 20px;
+      line-height: 1.6;
+      text-align: center;
+    }
+
+    footer {
+      background: #d85c8a;
+      color: white;
+      text-align: center;
+      padding: 35px 20px;
+    }
+
+    footer a {
+      color: white;
+      font-weight: bold;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    @media (max-width: 800px) {
+      h1 {
+        font-size: 42px;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      .hero p {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="hero">
+    <h1>Sakura Café</h1>
+    <p>Вкус весны в каждом десерте</p>
+    <a href="#menu" class="btn">Посмотреть меню</a>
+    <a href="#contacts" class="btn">Связаться</a>
+  </div>
+</header>
+
+<section id="menu">
+  <h2>Наши фирменные блюда</h2>
+
+  <div class="cards">
+    <div class="card">
+      <img src="product1.jpg" alt="Клубничный десерт">
+      <div>
+        <h3>Клубничный десерт</h3>
+        <p>Нежный десерт с клубникой и украшением в стиле сакуры.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="product2.jpg" alt="Матча латте">
+      <div>
+        <h3>Матча-латте</h3>
+        <p>Ароматный японский напиток с мягким вкусом и красивой подачей.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="product3.jpg" alt="Японский чизкейк">
+      <div>
+        <h3>Японский чизкейк</h3>
+        <p>Воздушный чизкейк с лёгким кремом и весенним настроением.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>О кафе</h2>
+  <div class="about">
+    <p>
+      Sakura Café — это уютное кафе в японском стиле, где можно попробовать
+      красивые десерты, выпить матча-латте и почувствовать атмосферу весны.
+    </p>
+    <a href="#contacts" class="btn">Забронировать столик</a>
+  </div>
+</section>
+
+<footer id="contacts">
+  <h2 style="color:white;">Контакты</h2>
+  <p>Мы всегда рады гостям!</p>
+  <p>
+    <a href="https://t.me/sakuracafe" target="_blank">Telegram</a>
+    <a href="https://vk.com/sakuracafe" target="_blank">VK</a>
+    <a href="mailto:hello@sakuracafe.ru">Email</a>
+  </p>
+</footer>
+
+</body>
+</html>
