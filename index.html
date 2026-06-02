@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sakura Café</title>
+
   <style>
     body {
       margin: 0;
@@ -25,10 +26,11 @@
     }
 
     .hero {
-      background: rgba(255, 255, 255, 0.85);
+      background: rgba(255, 255, 255, 0.88);
       padding: 35px;
       border-radius: 25px;
       max-width: 650px;
+      box-shadow: 0 10px 30px rgba(216, 92, 138, 0.25);
     }
 
     h1 {
@@ -51,6 +53,10 @@
       text-decoration: none;
       font-weight: bold;
       margin: 5px;
+    }
+
+    .btn:hover {
+      background: #b94470;
     }
 
     section {
@@ -95,6 +101,26 @@
       font-size: 24px;
     }
 
+    .menu-box {
+      background: white;
+      border-radius: 28px;
+      padding: 25px;
+      box-shadow: 0 8px 25px rgba(216, 92, 138, 0.18);
+      text-align: center;
+    }
+
+    .menu-box img {
+      width: 100%;
+      max-width: 850px;
+      border-radius: 22px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    }
+
+    .menu-box p {
+      font-size: 19px;
+      line-height: 1.6;
+    }
+
     .about {
       background: white;
       border-radius: 25px;
@@ -110,6 +136,11 @@
       color: white;
       text-align: center;
       padding: 35px 20px;
+    }
+
+    footer h2 {
+      color: white;
+      margin-bottom: 15px;
     }
 
     footer a {
@@ -131,17 +162,22 @@
       .hero p {
         font-size: 18px;
       }
+
+      h2 {
+        font-size: 30px;
+      }
     }
   </style>
 </head>
+
 <body>
 
 <header>
   <div class="hero">
     <h1>Sakura Café</h1>
     <p>Вкус весны в каждом десерте</p>
-    <a href="#menu" class="btn">Посмотреть меню</a>
-    <a href="#contacts" class="btn">Связаться</a>
+    <a href="#menu" class="btn">Посмотреть блюда</a>
+    <a href="#full-menu" class="btn">Открыть меню</a>
   </div>
 </header>
 
@@ -158,7 +194,7 @@
     </div>
 
     <div class="card">
-      <img src="product2.jpg" alt="Матча латте">
+      <img src="product2.jpg" alt="Матча-латте">
       <div>
         <h3>Матча-латте</h3>
         <p>Ароматный японский напиток с мягким вкусом и красивой подачей.</p>
@@ -175,20 +211,39 @@
   </div>
 </section>
 
-<section>
-  <h2>О кафе</h2>
-  <div class="about">
+<section id="full-menu">
+  <h2>Полное меню</h2>
+
+  <div class="menu-box">
     <p>
-      Sakura Café — это уютное кафе в японском стиле, где можно попробовать
-      красивые десерты, выпить матча-латте и почувствовать атмосферу весны.
+      В Sakura Café есть напитки, десерты и особенный бабл-ти с тапиокой.
     </p>
+
+    <img src="menu.jpg" alt="Полное меню Sakura Café">
+
+    <br><br>
+
     <a href="#contacts" class="btn">Забронировать столик</a>
   </div>
 </section>
 
+<section>
+  <h2>О кафе</h2>
+
+  <div class="about">
+    <p>
+      Sakura Café — это уютное кафе в японском стиле, где можно попробовать
+      красивые десерты, матча-латте, бабл-ти с тапиокой и почувствовать атмосферу весны.
+    </p>
+
+    <a href="#contacts" class="btn">Связаться с нами</a>
+  </div>
+</section>
+
 <footer id="contacts">
-  <h2 style="color:white;">Контакты</h2>
+  <h2>Контакты</h2>
   <p>Мы всегда рады гостям!</p>
+
   <p>
     <a href="https://t.me/sakuracafe" target="_blank">Telegram</a>
     <a href="https://vk.com/sakuracafe" target="_blank">VK</a>
